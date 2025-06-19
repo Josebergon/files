@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="overlay1">
+    <InLine>
+      <AdSystem>MiServidor</AdSystem>
+      <AdTitle>Overlay L‑Shape</AdTitle>
+
+      <!-- Cuenta impresión del overlay -->
+      <Impression><![CDATA[https://tuservidor.com/imp_overlay]]></Impression>
+
+      <Creatives>
+        <Creative id="ov1">
+          <NonLinearAds>
+
+            <!-- Overlay en forma L: 300×250 (esquina) + 728×90 (bottom) -->
+            <NonLinear width="728" height="90" minSuggestedDuration="00:00:10">
+              <!-- Recurso HTML completo -->
+              <HTMLResource creativeType="text/html"><![CDATA[
+                <style>
+                  #lwrap{position:fixed;bottom:0;left:0;z-index:99999;font-family:sans-serif;}
+                  #lwrap img{display:block;border:0;}
+                  #lwrap .close{position:absolute;top:4px;right:4px;
+                                font-size:18px;color:#fff;cursor:pointer;}
+                  #lwrap .panel{background:#000;opacity:.8;display:flex;
+                                align-items:center;}
+                  #lwrap .panel span{color:#fff;margin-left:12px;font-size:14px;}
+                </style>
+                <div id="lwrap">
+                  <!-- Bloque 300×250 -->
+                  <a href="https://tusitio.com/click" target="_blank">
+                    <img src="https://via.placeholder.com/300x250.png?text=Ad" alt="300x250">
+                  </a>
+                  <!-- Barra 728×90 -->
+                  <div class="panel" style="width:728px;height:90px;">
+                    <a href="https://tusitio.com/click" target="_blank">
+                      <img src="https://via.placeholder.com/120x60.png" alt="logo">
+                    </a>
+                    <span>¡Tu mensaje aquí! Haz clic →</span>
+                    <div class="close" onclick="document.getElementById('lwrap').remove()">✕</div>
+                  </div>
+                </div>
+              ]]></HTMLResource>
+
+              <!-- Fallback estático por si HTML no se permite -->
+              <StaticResource creativeType="image/png">
+                <![CDATA[https://via.placeholder.com/728x90.png?text=Overlay]]>
+              </StaticResource>
+
+              <!-- Rastreo y clics -->
+              <NonLinearClickThrough><![CDATA[https://tusitio.com/click]]></NonLinearClickThrough>
+              <NonLinearClickTracking><![CDATA[https://tuservidor.com/ctr_overlay]]></NonLinearClickTracking>
+            </NonLinear>
+
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
