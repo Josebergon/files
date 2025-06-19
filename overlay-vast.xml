@@ -7,17 +7,17 @@
       <Impression><![CDATA[https://tuservidor.com/imp_overlay]]></Impression>
       <Creatives>
         <Creative id="ov1">
-          <NonLinearAds>
-            <NonLinear width="728" height="90" minSuggestedDuration="00:00:10">
-              <StaticResource creativeType="image/png">
-                <![CDATA[https://via.placeholder.com/728x90.png?text=Overlay]]>
-              </StaticResource>
-              <NonLinearClickThrough><![CDATA[https://tusitio.com/click]]></NonLinearClickThrough>
-              <NonLinearClickTracking><![CDATA[https://tuservidor.com/ctr_overlay]]></NonLinearClickTracking>
-            </NonLinear>
-          </NonLinearAds>
+          <NonLinear width="300" height="50" minSuggestedDuration="00:00:10">
+            <StaticResource creativeType="image/png">
+              <![CDATA[https://via.placeholder.com/300x50.png]]>
+            </StaticResource>
+            <NonLinearClickThrough><![CDATA[https://example.com]]></NonLinearClickThrough>
+          </NonLinear>
         </Creative>
       </Creatives>
     </InLine>
   </Ad>
 </VAST>
+
+
+
