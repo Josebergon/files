@@ -9,29 +9,6 @@
         <Creative id="ov1">
           <NonLinearAds>
             <NonLinear width="728" height="90" minSuggestedDuration="00:00:10">
-              <HTMLResource creativeType="text/html"><![CDATA[
-                <style>
-                  #lwrap{position:fixed;bottom:0;left:0;z-index:99999;font-family:sans-serif;}
-                  #lwrap img{display:block;border:0;}
-                  #lwrap .close{position:absolute;top:4px;right:4px;
-                                font-size:18px;color:#fff;cursor:pointer;}
-                  #lwrap .panel{background:#000;opacity:.8;display:flex;
-                                align-items:center;}
-                  #lwrap .panel span{color:#fff;margin-left:12px;font-size:14px;}
-                </style>
-                <div id="lwrap">
-                  <a href="https://tusitio.com/click" target="_blank">
-                    <img src="https://via.placeholder.com/300x250.png?text=Ad" alt="300x250">
-                  </a>
-                  <div class="panel" style="width:728px;height:90px;">
-                    <a href="https://tusitio.com/click" target="_blank">
-                      <img src="https://via.placeholder.com/120x60.png" alt="logo">
-                    </a>
-                    <span>¡Tu mensaje aquí! Haz clic →</span>
-                    <div class="close" onclick="document.getElementById('lwrap').remove()">✕</div>
-                  </div>
-                </div>
-              ]]></HTMLResource>
               <StaticResource creativeType="image/png">
                 <![CDATA[https://via.placeholder.com/728x90.png?text=Overlay]]>
               </StaticResource>
