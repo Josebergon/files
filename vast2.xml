@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="002">
+    <InLine>
+      <AdSystem>MiServidor</AdSystem>
+      <AdTitle>Non-Linear Overlay Ad</AdTitle>
+      <Impression><![CDATA[https://tuservidor.com/impression]]></Impression>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear width="480" height="70" minSuggestedDuration="00:00:15" scalable="true" maintainAspectRatio="true">
+              <StaticResource creativeType="image/png">
+                <![CDATA[https://placehold.co/480x70]]>
+              </StaticResource>
+              <NonLinearClickThrough>
+                <![CDATA[https://yoursite.com/landing-page]]>
+              </NonLinearClickThrough>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
