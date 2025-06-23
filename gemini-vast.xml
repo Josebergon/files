@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.2">
+  <Ad id="l_shaped_overlay_ad">
+    <InLine>
+      <AdSystem version="1.0">MyCustomAdSystem</AdSystem>
+      <AdTitle>L-Shaped Overlay Ad</AdTitle>
+      <Impression id="i-example">
+        <![CDATA[https://example.com/impression_tracking_url_1]]>
+      </Impression>
+      <Creatives>
+        <Creative id="l-shape-creative" sequence="1">
+          <NonLinearAds>
+            <NonLinear width="640" height="360" scalable="true" maintainAspectRatio="true">
+              <HTMLResource creativeType="application/x-javascript">
+                <![CDATA[
+                  <div id="l-shape-container">
+                    <a href="https://yourcompany.com/top_ad_landing_page" target="_blank">
+                      <img src="https://via.placeholder.com/640x90/FF0000/FFFFFF?text=Top+L-Ad" alt="Top Ad" class="l-shape-part top-part">
+                    </a>
+                    <a href="https://yourcompany.com/side_ad_landing_page" target="_blank">
+                      <img src="https://via.placeholder.com/90x270/0000FF/FFFFFF?text=Side+L-Ad" alt="Side Ad" class="l-shape-part side-part">
+                    </a>
+                  </div>
+
+                  <style>
+                    /* Basic styling for the L-shaped ad */
+                    #l-shape-container {
+                      position: relative;
+                      width: 100%; /* Occupy the full width of the non-linear slot */
+                      height: 100%; /* Occupy the full height of the non-linear slot */
+                      overflow: hidden; /* Hide anything outside the container */
+                    }
+
+                    .l-shape-part {
+                      position: absolute;
+                      display: block; /* Ensure images are block-level */
+                      object-fit: fill; /* Ensure images fill their containers */
+                    }
+
+                    .top-part {
+                      width: 100%; /* Stretches across the top */
+                      height: 25%; /* Roughly 90px for 360px height slot */
+                      top: 0;
+                      left: 0;
+                    }
+
+                    .side-part {
+                      width: 25%; /* Roughly 90px for 640px width slot */
+                      height: 75%; /* Roughly 270px for 360px height slot */
+                      bottom: 0;
+                      left: 0;
+                    }
+
+                    /* Optional: Add hover effects or animations here */
+                    .l-shape-part:hover {
+                      opacity: 0.8;
+                    }
+                  </style>
+
+                  <script>
+                    // Basic tracking for the L-shaped ad (optional, better handled by IMA tracking events)
+                    // You could add specific click tracking for each part here if needed.
+                    document.getElementById('l-shape-container').addEventListener('click', function(e) {
+                      // Example: You might want to prevent default if you have multiple clickthroughs
+                      // e.preventDefault();
+                      console.log('L-shaped ad clicked!');
+                      // For a real scenario, you'd fire a tracking pixel here
+                      // var img = new Image();
+                      // img.src = "https://example.com/click_tracking_for_l_shape";
+                    });
+
+                    // You can add more complex JavaScript here to handle interactive elements
+                    // or dynamic content within your L-shape.
+                  </script>
+                ]]>
+              </HTMLResource>
+              <NonLinearClickThrough>
+                <![CDATA[https://yourcompany.com/default_l_ad_landing_page]]>
+              </NonLinearClickThrough>
+              <NonLinearClickTracking id="nt-example">
+                <![CDATA[https://example.com/nonlinear_click_tracking_url_1]]>
+              </NonLinearClickTracking>
+              <TrackingEvents>
+                <Tracking event="creativeView">
+                  <![CDATA[https://example.com/creative_view_tracking_url]]>
+                </Tracking>
+                <Tracking event="acceptInvitation">
+                  <![CDATA[https://example.com/accept_invitation_tracking_url]]>
+                </Tracking>
+                <Tracking event="collapse">
+                  <![CDATA[https://example.com/collapse_tracking_url]]>
+                </Tracking>
+              </TrackingEvents>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
