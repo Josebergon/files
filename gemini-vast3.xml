@@ -12,7 +12,7 @@
           <NonLinearAds>
             <NonLinear width="640" height="360" scalable="true" maintainAspectRatio="true">
               <StaticResource creativeType="image/png">
-                <![CDATA[https://via.placeholder.com/640x360/FF0000/FFFFFF?text=L-Shaped+Overlay+Ad]]>
+                <![CDATA[https://placehold.co/640x360]]>
                 </StaticResource>
               
               <NonLinearClickThrough>
