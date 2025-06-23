@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.2">
+  <Ad id="l_shaped_overlay_ad_image">
+    <InLine>
+      <AdSystem version="1.0">MyCustomAdSystem</AdSystem>
+      <AdTitle>L-Shaped Overlay Ad - Image Only</AdTitle>
+      <Impression id="i-example">
+        <![CDATA[https://example.com/impression_tracking_url_1]]>
+      </Impression>
+      <Creatives>
+        <Creative id="l-shape-creative-image" sequence="1">
+          <NonLinearAds>
+            <NonLinear width="640" height="360" scalable="true" maintainAspectRatio="true">
+              <StaticResource creativeType="image/png">
+                <![CDATA[https://placehold.co/640x360]]>
+                </StaticResource>
+              
+              <NonLinearClickThrough>
+                <![CDATA[https://yourcompany.com/l_ad_landing_page]]>
+              </NonLinearClickThrough>
+              <NonLinearClickTracking id="nt-example">
+                <![CDATA[https://example.com/nonlinear_click_tracking_url_1]]>
+              </NonLinearClickTracking>
+              <TrackingEvents>
+                <Tracking event="creativeView">
+                  <![CDATA[https://example.com/creative_view_tracking_url]]>
+                </Tracking>
+                <Tracking event="acceptInvitation">
+                  <![CDATA[https://example.com/accept_invitation_tracking_url]]>
+                </Tracking>
+                <Tracking event="collapse">
+                  <![CDATA[https://example.com/collapse_tracking_url]]>
+                </Tracking>
+              </TrackingEvents>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
