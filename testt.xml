@@ -2,7 +2,7 @@
 <vmap:AdBreak timeOffset="start" breakType="linear" breakId="pre-roll">
 <vmap:AdSource id="ads-pre-roll" allowMultipleAds="false" followRedirects="true">
 <vmap:AdTagURI templateType="vast3">
-<![CDATA[ https://revive.figc.tech/fc.php?script=rmVideo&zoneid=32&pmaxd=&format=vast_pod ]]>
+<![CDATA[ https://revive.figc.tech/fc.php?script=rmVideo&zoneid=32&format=vast_pod ]]>
 </vmap:AdTagURI>
 </vmap:AdSource>
 </vmap:AdBreak>
