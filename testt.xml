@@ -1,0 +1,9 @@
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
+<vmap:AdBreak timeOffset="start" breakType="linear" breakId="pre-roll">
+<vmap:AdSource id="ads-pre-roll" allowMultipleAds="false" followRedirects="true">
+<vmap:AdTagURI templateType="vast3">
+<![CDATA[ https://revive.figc.tech/fc.php?script=rmVideo&zoneid=32&pmaxd=&format=vast_pod ]]>
+</vmap:AdTagURI>
+</vmap:AdSource>
+</vmap:AdBreak>
+</vmap:VMAP>
